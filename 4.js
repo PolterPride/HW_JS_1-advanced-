@@ -1,9 +1,11 @@
 function stringToNumber(userAge){
-    let stringNumber = Number(userAge)
-    if(!isNaN(stringNumber)){
-        return stringNumber
+    if(typeof userAge != 'boolean' && typeof userAge != 'object' && typeof userAge != 'undefined' && userAge != ''){
+        let stringNumber = Number(userAge)
+        if(!isNaN(stringNumber)){
+            return stringNumber
     }
     return userAge
+}
 }
 
 
@@ -30,7 +32,7 @@ function checkAge(userAge, lowAge, highAge) {
         console.log('Technical work');
     }
 }
-let userAge = '21'
+let userAge = 'cc'
 const lowAge = 18;
 const highAge = 60;
 checkAge(userAge, lowAge, highAge)
