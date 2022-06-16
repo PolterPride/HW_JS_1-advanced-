@@ -1,4 +1,5 @@
-
+// 2*:
+// Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
 
 function checkAgeForNumber(userAge){
     if(typeof userAge != 'number')

@@ -1,3 +1,6 @@
+// 4***:
+// Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
+
 function stringToNumber(userAge){
     let stringNumber = Number(userAge)
     if(!isNaN(stringNumber)){

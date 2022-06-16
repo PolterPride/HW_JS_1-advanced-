@@ -1,3 +1,10 @@
+// 1*:
+// Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.
+// Пример: const checkAge = function(age) {
+// Ваши преобразования
+// }
+// Вывести в консоль результат работы функции с возрастами 17, 18, 61
+
 function checkAge(userAge, lowAge, highAge) {
     if (userAge >= lowAge && userAge < highAge) {
         console.log('Welcome!');
