@@ -1,5 +1,8 @@
+// 3**:
+// Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
 function stringToNumber(userAge){
-    if(typeof userAge != 'boolean' && typeof userAge != 'object' && typeof userAge != 'undefined' && userAge != ''){
+    // if(typeof userAge != 'boolean' && typeof userAge != 'object' && typeof userAge != 'undefined' && userAge != ''){
+    if(typeof userAge == 'string' || typeof userAge == 'number'){
         let stringNumber = Number(userAge)
         if(!isNaN(stringNumber)){
             return stringNumber
@@ -13,8 +16,6 @@ function checkAgeForNumber(userAge){
     if(typeof userAge != 'number')
     throw new TypeError('userAge must be a number')
 }
-// 3**:
-// Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
 
 function checkAge(userAge, lowAge, highAge) {
     let parsedUserAge = stringToNumber(userAge)
@@ -32,7 +33,7 @@ function checkAge(userAge, lowAge, highAge) {
         console.log('Technical work');
     }
 }
-let userAge = 'cc'
+let userAge = ''
 const lowAge = 18;
 const highAge = 60;
 checkAge(userAge, lowAge, highAge)
